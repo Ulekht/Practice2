@@ -1,0 +1,4 @@
+FROM circleci/python:3.6.4
+ADD ../
+RUN sudo pip instell -r requirements.txt
+RUN sudo jupiter nbconvert ./practika.ipynb
